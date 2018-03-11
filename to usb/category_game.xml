@@ -697,32 +697,24 @@
 			/>
 		</Items>
 	</View>
-	<View id="seg_package_fixed">
-	<Items>
-	 <Query class="type:x-xmb/folder-pixmap" key="host_psn" attr="host_psn" src="#seg_install_files_psn"/>
-	 <Query class="type:x-xmb/folder-pixmap" key="hdd0_install" attr="hdd0_install" src="#seg_package_files_install"/>
-	 <Query class="type:x-xmb/folder-pixmap" key="hdd0_delete" attr="hdd0_delete" src="#seg_package_files_delete"/>
-	 <Query class="type:x-xmb/folder-pixmap" key="pkg_link0" src="xmb://localhost/dev_usb000/package_link.xml#package_link"/>
-	 <Query class="type:x-xmb/folder-pixmap" key="pkg_link1" src="xmb://localhost/dev_usb001/package_link.xml#package_link"/>
-	 </Items>
-	 </View>
 
 	<View id="seg_packages">
-	 <Items>
-	 <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_host" src="host://localhost/q?path=/app_home/&suffix=.pkg&subclass=x-host/package" />
-	 <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_bdvd" src="host://localhost/q?path=/dev_bdvd&suffix=.pkg&subclass=x-host/package" />
-	 <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_ms" src="host://localhost/q?path=/dev_ms&suffix=.pkg&subclass=x-host/package" />
-	 <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb0" src="host://localhost/q?path=/dev_usb000&suffix=.pkg&subclass=x-host/package" />
-	 <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb1" src="host://localhost/q?path=/dev_usb001&suffix=.pkg&subclass=x-host/package" />
-	 <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb2" src="host://localhost/q?path=/dev_usb002&suffix=.pkg&subclass=x-host/package" />
-	 <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb3" src="host://localhost/q?path=/dev_usb003&suffix=.pkg&subclass=x-host/package" />
-	 <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb4" src="host://localhost/q?path=/dev_usb004&suffix=.pkg&subclass=x-host/package" />
-	 <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb5" src="host://localhost/q?path=/dev_usb005&suffix=.pkg&subclass=x-host/package" />
-	 <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb6" src="host://localhost/q?path=/dev_usb006&suffix=.pkg&subclass=x-host/package" />
-	 <Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb7" src="host://localhost/q?path=/dev_usb007&suffix=.pkg&subclass=x-host/package" />
-	 <Query class="type:x-xmb/folder-pixmap" key="pkg_link0" src="xmb://localhost/dev_usb000/package_link.xml#custom_pkg"/>
-	 <Query class="type:x-xmb/folder-pixmap" key="pkg_link1" src="xmb://localhost/dev_usb001/package_link.xml#custom_pkg"/>
-	 </Items>
-	 </View>
+		<Items>
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_host" src="host://localhost/q?path=/app_home/&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_bdvd" src="host://localhost/q?path=/dev_bdvd&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_ms" src="host://localhost/q?path=/dev_ms&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb0" src="host://localhost/q?path=/dev_usb000&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb1" src="host://localhost/q?path=/dev_usb001&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb2" src="host://localhost/q?path=/dev_usb002&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb3" src="host://localhost/q?path=/dev_usb003&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb4" src="host://localhost/q?path=/dev_usb004&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb5" src="host://localhost/q?path=/dev_usb005&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb6" src="host://localhost/q?path=/dev_usb006&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb7" src="host://localhost/q?path=/dev_usb007&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_hdd0" src="host://localhost/q?path=/dev_hdd0/packages&suffix=.pkg&subclass=x-host/package"/>
+            <Query class="type:x-xmb/folder-pixmap" key="pkg_link_000" src="xmb://localhost/dev_usb000/package_link.xml#package_link"/>
+            <Query class="type:x-xmb/folder-pixmap" key="pkg_link_001" src="xmb://localhost/dev_usb001/package_link.xml#package_link"/>
+		</Items>
+	</View>
 
 </XMBML>
