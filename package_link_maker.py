@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 import os
@@ -42,11 +43,11 @@ for pkg in pkgs:
 
 f = open("package_link.xml", "w")
 f.write("<XMBML version=\"1.0\">\n"
-        "    <View id=\"custom_pkg\">\n"
+        "    <View id=\"package_link\">\n"
         "        <Attributes>\n")
 
 for x in range(len(pkgs)):
-    f.write("            <Table key=\"custom_pkg_main_" + str(x) + "\">\n"
+    f.write("            <Table key=\"pkg_main_" + str(x) + "\">\n"
             "                <Pair key=\"icon\"><String>/dev_usb000/download.png</String></Pair>\n"
             "                <Pair key=\"title\"><String>" + pkgs[x] + "</String></Pair>\n"
             "                <Pair key=\"info\"><String>" + content_id[x][7:16] + "</String></Pair>\n"
@@ -59,15 +60,15 @@ f.write("        </Attributes>\n"
 for x in range(len(pkgs)):
     f.write("            <Query\n"
             "                class=\"type:x-xmb/folder-pixmap\"\n"
-            "                key=\"custom_pkg_main_" + str(x) + "\"\n"
-            "                attr=\"custom_pkg_main_" + str(x) + "\"\n"
-            "                src=\"#custom_pkg_items_" + str(x) + "\"\n"
+            "                key=\"pkg_main_" + str(x) + "\"\n"
+            "                attr=\"pkg_main_" + str(x) + "\"\n"
+            "                src=\"#pkg_items_" + str(x) + "\"\n"
             "            />\n")
 f.write("        </Items>\n"
         "    </View>\n\n")
 
 for x in range(len(pkgs)):
-    f.write("    <View id=\"custom_pkg_items_" + str(x) + "\">\n"
+    f.write("    <View id=\"pkg_items_" + str(x) + "\">\n"
             "        <Attributes>\n"
             "            <Table key=\"link" + str(x) + "\">\n"
             "                <Pair key=\"info\"><String>net_package_install</String></Pair>\n"

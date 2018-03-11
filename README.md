@@ -9,7 +9,7 @@ Python (add path)
 
 ### Prepare with Ps3Xploit:
 * copy category_game.xml to PS3 
-    - add file from dir "for copy category_game.xml" to hfs.exe
+    - add file from dir "pett_mount_and_copy" to hfs.exe
     - copy file from dir "to usb" to usb000
     - on PS3 goto local server (ex. 192.168.1.1)
 	- check USB (in PHOTO/VIDEO)
