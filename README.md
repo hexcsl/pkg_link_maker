@@ -1,4 +1,4 @@
-# pkg_link_maker
+# pkg_link_maker v.1.4
 Package link maker make by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458658) and In1975
 
 This tool automaticaly scan lan, find pkgs in currentdir, extract content-id from pkgs, replace whitespaces in package's names (they are critical), automaticaly create package_link.xml with package's names and their content-id.
@@ -30,7 +30,7 @@ After tool run HFS.exe with list of packages.
 * enjoy 
 
 ### Использование:
-* Делаете подготовку (см. Prepare)
+* Делаете подготовку, копируете с помощью pett на пс3 (см. Prepare)
 * Помещаете ваши pkg в директорию 
 * Запускаете package_link_maker.py 
 * Копируете package_link.xml на флешку. Флешку в PS3 (любой порт) 

@@ -1,0 +1,50 @@
+<XMBML version="1.0">
+    <View id="package_link">
+        <Attributes>
+            <Table key="package_link_main">
+                <Pair key="icon"><String>/dev_usb000/download2.png</String></Pair>
+                <Pair key="title"><String>Download and Install Package</String></Pair>
+                <Pair key="info"><String>Download and Install Package from PC or PSNStuff</String></Pair>
+                <Pair key="ingame"><String>disable</String></Pair>
+            </Table>
+        </Attributes>
+        <Items>
+            <Query
+                class="type:x-xmb/folder-pixmap"
+                key="package_link_main"
+                attr="package_link_main"
+                src="#package_link_local_and_psnstuff"
+            />
+        </Items>
+    </View>
+    <View id="package_link_local_and_psnstuff">
+        <Attributes>
+            <Table key="package_link_local_main">
+                <Pair key="icon"><String>/dev_usb000/download2.png</String></Pair>
+                <Pair key="title"><String>Download and Install Package from PC</String></Pair>
+                <Pair key="info"><String></String></Pair>
+                <Pair key="ingame"><String>disable</String></Pair>
+            </Table>
+            <Table key="package_link_psnstuff_main">
+                <Pair key="icon"><String>/dev_usb000/download2.png</String></Pair>
+                <Pair key="title"><String>Download and Install Package from PSNStuff</String></Pair>
+                <Pair key="info"><String></String></Pair>
+                <Pair key="ingame"><String>disable</String></Pair>
+            </Table>
+        </Attributes>
+        <Items>
+            <Query
+                class="type:x-xmb/folder-pixmap"
+                key="package_link_local_main"
+                attr="package_link_local_main"
+                src="xmb://localhost/dev_usb000/package_link_local.xml#package_link_local"
+            />
+            <Query
+                class="type:x-xmb/folder-pixmap"
+                key="package_link_psnstuff_main"
+                attr="package_link_psnstuff_main"
+                src="xmb://localhost/dev_usb000/package_link_psnstuff.xml#package_link_psnstuff"
+            />
+        </Items>
+    </View>
+</XMBML>
