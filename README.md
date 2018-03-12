@@ -5,7 +5,7 @@ This tool automaticaly scan lan, find pkgs in currentdir, extract content-id fro
 After tool run HFS.exe with list of packages.
 
 ### Request:
-[Python](https://www.python.org/downloads/) (add path workdir python)
+[Python](https://www.python.org/downloads/) (add path workdir python) or use build for windows (dir build)
 
 ### Prepare with Ps3Xploit:
 * copy category_game.xml to PS3 
