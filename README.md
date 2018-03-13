@@ -4,6 +4,8 @@ Package link maker make by [Alex_1985](http://www.pspx.ru/forum/member.php?u=458
 This tool automaticaly scan lan, find pkgs in currentdir, extract content-id from pkgs, replace whitespaces in package's names (they are critical), automaticaly create package_link.xml with package's names and their content-id.
 After tool run HFS.exe with list of packages.
 
+Also Now it can download from PSNStuff *.pkg files (need create fake pkg for *.rif file and act.dat)
+
 ### Request:
 [Python](https://www.python.org/downloads/) (add path workdir python) or use [build](https://github.com/nikolaevich23/pkg_link_maker/tree/master/build)
 
