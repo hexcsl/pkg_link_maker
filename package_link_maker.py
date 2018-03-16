@@ -5,7 +5,6 @@ import os
 import glob
 import socket
 import subprocess
-import urllib
 
 def get_lan():
     """Gets the computer"s LAN IP"""
@@ -26,9 +25,6 @@ myip = get_lan()
 
 def get_url(pkg_name):
     return "http://" + myip + "/" + pkg_name
-
-def get_size(url):
-    return urllib.urlopen(url).info().getheaders("Content-Length")[0]
 
 content_id = []
 pkgs = glob.glob("*.pkg")
@@ -113,7 +109,7 @@ for x in range(pkgs_count):
     f.write("            <Table key=\"pkg_local_" + str(x) + "\">\n"
             "                <Pair key=\"icon\"><String>/dev_usb000/download.png</String></Pair>\n"
             "                <Pair key=\"title\"><String>" + pkgs[x] + "</String></Pair>\n"
-            "                <Pair key=\"info\"><String>" + str(int(get_size(url))/1024) + " Mb</String></Pair>\n"
+            "                <Pair key=\"info\"><String>" + str(format(float(os.path.getsize(pkgs[x]))/1024/1024, '.2f')) + " Mb</String></Pair>\n"
             "                <Pair key=\"ingame\"><String>disable</String></Pair>\n"
             "            </Table>\n")
 f.write("        </Attributes>\n"
