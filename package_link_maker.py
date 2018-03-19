@@ -12,8 +12,7 @@ content_id = []
 pkgs = glob.glob("*.pkg")
 
 for pkg in pkgs:
-    os.rename(pkg, pkg.replace(" ","_"))
-    os.rename(pkg, pkg.replace("&","_and_"))
+    os.rename(pkg, pkg.replace(" ","_").replace("&","_and_"))
 
 pkgs = glob.glob("*.pkg")
 
@@ -36,7 +35,7 @@ for i in os.listdir(".\\"):
 subprocess.Popen(hfs, shell = False)
 pkgs_count = len(pkgs)
 
-f = open("package_link.xml", "w")
+f = open(".\\to_usb\package_link.xml", "w")
 f.write("<XMBML version=\"1.0\">\n"
         "    <View id=\"package_link\">\n"
         "        <Attributes>\n"
